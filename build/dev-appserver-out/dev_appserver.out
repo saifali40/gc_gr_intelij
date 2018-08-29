@@ -1,0 +1,56 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.appengine.tools.development.StreamHandlerFactory (file:/Users/saif/Downloads/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/lib/impl/appengine-local-runtime.jar) to method java.net.URL.getURLStreamHandler(java.lang.String)
+WARNING: Please consider reporting this to the maintainers of com.google.appengine.tools.development.StreamHandlerFactory
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Aug 29, 2018 1:59:54 PM com.google.appengine.tools.development.LoggingConfigurationManager loadPropertiesFile
+WARNING: Unable to load properties file, /Users/saif/workplace/apps/workers/build/exploded-workers/WEB-INF/logging.properties
+java.io.FileNotFoundException: /Users/saif/workplace/apps/workers/build/exploded-workers/WEB-INF/logging.properties (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at com.google.appengine.tools.development.LoggingConfigurationManager.loadPropertiesFile(LoggingConfigurationManager.java:170)
+	at com.google.appengine.tools.development.LoggingConfigurationManager.read(LoggingConfigurationManager.java:78)
+	at com.google.appengine.tools.development.ApplicationConfigurationManager.validateAndRegisterGlobalValues(ApplicationConfigurationManager.java:183)
+	at com.google.appengine.tools.development.ApplicationConfigurationManager.access$400(ApplicationConfigurationManager.java:31)
+	at com.google.appengine.tools.development.ApplicationConfigurationManager$WarModuleConfigurationHandle.readConfiguration(ApplicationConfigurationManager.java:443)
+	at com.google.appengine.tools.development.ApplicationConfigurationManager.<init>(ApplicationConfigurationManager.java:158)
+	at com.google.appengine.tools.development.ApplicationConfigurationManager.newWarConfigurationManager(ApplicationConfigurationManager.java:100)
+	at com.google.appengine.tools.development.ApplicationConfigurationManager.newWarConfigurationManager(ApplicationConfigurationManager.java:86)
+	at com.google.appengine.tools.development.DevAppServerImpl.<init>(DevAppServerImpl.java:146)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at com.google.appengine.tools.development.DevAppServerFactory.doCreateDevAppServer(DevAppServerFactory.java:386)
+	at com.google.appengine.tools.development.DevAppServerFactory.access$000(DevAppServerFactory.java:31)
+	at com.google.appengine.tools.development.DevAppServerFactory$1.run(DevAppServerFactory.java:318)
+	at com.google.appengine.tools.development.DevAppServerFactory$1.run(DevAppServerFactory.java:315)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at com.google.appengine.tools.development.DevAppServerFactory.createDevAppServer(DevAppServerFactory.java:314)
+	at com.google.appengine.tools.development.DevAppServerMain$StartAction.apply(DevAppServerMain.java:374)
+	at com.google.appengine.tools.util.Parser$ParseResult.applyArgs(Parser.java:45)
+	at com.google.appengine.tools.development.DevAppServerMain.run(DevAppServerMain.java:247)
+	at com.google.appengine.tools.development.DevAppServerMain.main(DevAppServerMain.java:238)
+
+Aug 29, 2018 1:59:54 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value '/Users/saif/Downloads/google-cloud-sdk/platform/google_appengine/google/appengine/tools/java/config/sdk/logging.properties' with value 'WEB-INF/logging.properties' from '/Users/saif/workplace/apps/workers/build/exploded-workers/WEB-INF/appengine-web.xml'
+2018-08-29 13:59:54.875:INFO::main: Logging initialized @1543ms
+2018-08-29 13:59:55.444:INFO:oejs.Server:main: jetty-9.3.18.v20170406
+2018-08-29 13:59:59.270:INFO:oeja.AnnotationConfiguration:main: Scanning elapsed time=3555ms
+2018-08-29 13:59:59.814:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@2dbf4cbd{/,file:///Users/saif/workplace/apps/workers/build/exploded-workers/,AVAILABLE}{/Users/saif/workplace/apps/workers/build/exploded-workers}
+2018-08-29 13:59:59.838:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@69637b10{HTTP/1.1,[http/1.1]}{localhost:8080}
+2018-08-29 13:59:59.852:INFO:oejs.Server:main: Started @6519ms
+Aug 29, 2018 8:29:59 AM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance worker is running at http://localhost:8080/
+Aug 29, 2018 8:29:59 AM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8080/_ah/admin
+Aug 29, 2018 1:59:59 PM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFO: Dev App Server is now running
+Aug 29, 2018 2:00:06 PM com.google.appengine.tools.development.jetty9.LocalResourceFileServlet doGet
+WARNING: No file found for: /robots.txt
+2018-08-29 14:00:17.560:INFO:oejs.AbstractConnector:pool-1-thread-1: Stopped NetworkTrafficSelectChannelConnector@69637b10{HTTP/1.1,[http/1.1]}{localhost:8080}
+2018-08-29 14:00:17.562:INFO:oejsh.ContextHandler:pool-1-thread-1: Stopped c.g.a.t.d.j.DevAppEngineWebAppContext@2dbf4cbd{/,file:///Users/saif/workplace/apps/workers/build/exploded-workers/,UNAVAILABLE}{/Users/saif/workplace/apps/workers/build/exploded-workers}
+Aug 29, 2018 2:00:17 PM com.google.appengine.tools.development.AbstractModule shutdown
+INFO: Shutting down module instance worker
+demoShutting down.
